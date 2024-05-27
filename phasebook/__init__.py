@@ -12,5 +12,5 @@ def create_app(): #start of the app
 
     app.register_blueprint(match.bp) #use to organize routes into separate modules
     app.register_blueprint(search.bp) #use to organize routes into separate modules
-
+ 
     return app

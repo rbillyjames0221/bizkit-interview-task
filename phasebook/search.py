@@ -5,7 +5,7 @@ from .data.search_data import USERS
 bp = Blueprint("search", __name__, url_prefix="/search")
 
 @bp.route("")
-def search_users():
+def search_users(): 
     search_id = request.args.get('id')
     search_name = request.args.get('name', '').lower()
     search_age = request.args.get('age')
